@@ -1,18 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Microsoft.OpenApi.Models;
 using PokeM.Api.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PokeM.Api
 {
@@ -31,7 +22,7 @@ namespace PokeM.Api
             // Configurar banco
             services.AddDatabaseSetup(Configuration);
 
-            // Configurar swagger   
+            // Configurar swagger
             services.AddSwaggerSetup(Configuration);
 
             services.AddControllers();

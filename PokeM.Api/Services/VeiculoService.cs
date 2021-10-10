@@ -1,11 +1,8 @@
 ﻿using MongoDB.Driver;
-using PokeM.Api.Models.Documents;
 using PokeM.Api.Models;
-using System;
+using PokeM.Api.Models.Documents;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PokeM.Api.Services
 {
